@@ -26,7 +26,7 @@ import butterknife.OnLongClick;
  * 作者：xiezhenggen on 2017/11/22 19:32
  */
 
-public class NavFragment extends BaseFragment implements View.OnClickListener, NoticeManager.NoticeNotify,View.OnLongClickListener {
+public class NavFragment extends BaseFragment implements View.OnClickListener,  View.OnLongClickListener {
     @BindView(R.id.nav_item_news)
     NavigationButton mNavNews;
     @BindView(R.id.nav_item_tweet)
@@ -57,13 +57,13 @@ public class NavFragment extends BaseFragment implements View.OnClickListener, N
     protected void initWidget(View root) {
         super.initWidget(root);
 
-        ShapeDrawable lineDrawable = new ShapeDrawable(new BorderShape(new RectF(0, 1, 0, 0)));
-        lineDrawable.getPaint().setColor(getResources().getColor(R.color.list_divider_color));
+       /** ShapeDrawable lineDrawable = new ShapeDrawable(new BorderShape(new RectF(0, 1, 0, 0)));
+      lineDrawable.getPaint().setColor(getResources().getColor(R.color.list_divider_color));
         LayerDrawable layerDrawable = new LayerDrawable(new Drawable[]{
                 new ColorDrawable(getResources().getColor(R.color.white)),
                 lineDrawable
         });
-        root.setBackgroundDrawable(layerDrawable);
+        root.setBackgroundDrawable(layerDrawable);*/
 
         mNavNews.init(R.drawable.tab_icon_new,
                 R.string.main_tab_name_news,
@@ -93,7 +93,7 @@ public class NavFragment extends BaseFragment implements View.OnClickListener, N
             NavigationButton nav = (NavigationButton) v;
             doSelect(nav);
         } else if (v.getId() == R.id.nav_item_tweet_pub) {
-            PubActivity.show(getContext());
+            //PubActivity.show(getContext());
             //TweetPublishActivity.show(getContext(), mRoot.findViewById(R.id.nav_item_tweet_pub));
         }
     }
@@ -101,7 +101,7 @@ public class NavFragment extends BaseFragment implements View.OnClickListener, N
     @OnLongClick({R.id.nav_item_tweet_pub})
     @Override
     public boolean onLongClick(View v) {
-        TweetPublishActivity.show(getContext(), mRootView.findViewById(R.id.nav_item_tweet_pub));
+       // TweetPublishActivity.show(getContext(), mRootView.findViewById(R.id.nav_item_tweet_pub));
         return false;
     }
 
@@ -185,7 +185,7 @@ public class NavFragment extends BaseFragment implements View.OnClickListener, N
     /**
      * 拦截底部点击，当点击个人按钮时进行消息跳转
      */
-    private boolean interceptMessageSkip() {
+ /*   private boolean interceptMessageSkip() {
         NoticeBean bean = NoticeManager.getNotice();
         if (bean.getAllCount() > 0) {
             if (bean.getLetter() + bean.getMention() + bean.getReview() > 0)
@@ -195,7 +195,7 @@ public class NavFragment extends BaseFragment implements View.OnClickListener, N
             return true;
         }
         return false;
-    }
+    }*/
 
     private void onReselect(NavigationButton navigationButton) {
         OnNavigationReselectListener listener = mOnNavigationReselectListener;
@@ -204,10 +204,6 @@ public class NavFragment extends BaseFragment implements View.OnClickListener, N
         }
     }
 
-    @Override
-    public void onNoticeArrived(NoticeBean bean) {
-        mNavMe.showRedDot(bean.getAllCount());
-    }
 
     public interface OnNavigationReselectListener {
         void onReselect(NavigationButton navigationButton);
@@ -216,12 +212,12 @@ public class NavFragment extends BaseFragment implements View.OnClickListener, N
     @Override
     public void onDestroy() {
         super.onDestroy();
-        NoticeManager.unBindNotify(this);
+
     }
 
     @Override
     protected void initData() {
         super.initData();
-        NoticeManager.bindNotify(this);
+
     }
 }
