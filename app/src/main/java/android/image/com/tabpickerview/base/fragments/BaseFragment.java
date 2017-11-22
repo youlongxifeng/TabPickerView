@@ -1,4 +1,4 @@
-package android.image.com.tabpickerview.base;
+package android.image.com.tabpickerview.base.fragments;
 
 import android.content.Context;
 import android.image.com.tabpickerview.interf.BaseFragmentInterface;

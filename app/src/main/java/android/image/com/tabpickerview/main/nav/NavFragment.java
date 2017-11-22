@@ -1,13 +1,8 @@
 package android.image.com.tabpickerview.main.nav;
 
 import android.content.Context;
-import android.graphics.RectF;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.LayerDrawable;
-import android.graphics.drawable.ShapeDrawable;
 import android.image.com.tabpickerview.R;
-import android.image.com.tabpickerview.base.BaseFragment;
+import android.image.com.tabpickerview.base.fragments.BaseFragment;
 import android.image.com.tabpickerview.widget.NavigationButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -71,15 +66,15 @@ public class NavFragment extends BaseFragment implements View.OnClickListener,  
 
         mNavTweet.init(R.drawable.tab_icon_tweet,
                 R.string.main_tab_name_tweet,
-                TweetViewPagerFragment.class);
+                DynamicTabFragment.class);
 
         mNavExplore.init(R.drawable.tab_icon_explore,
                 R.string.main_tab_name_explore,
-                ExploreFragment.class);
+                DynamicTabFragment.class);
 
         mNavMe.init(R.drawable.tab_icon_me,
                 R.string.main_tab_name_my,
-                UserInfoFragment.class);
+                DynamicTabFragment.class);
 
 
     }
