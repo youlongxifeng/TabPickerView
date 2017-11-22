@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="day_colorPrimary">#24cf5f</color>
+    <color name="user_info_message_notice">#E35B5A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="primarybar_txt">#af000000</color>
 </resources>

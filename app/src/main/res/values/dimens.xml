@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+
+    <!-- OSChina APP -->
+    <!-- old setting!!! please ignore it!! will remove it in future!! -->
+    <dimen name="text_size_18">18.0dip</dimen>
+    <dimen name="text_size_16">16.0dip</dimen>
+    <dimen name="text_size_15">15.0dip</dimen>
+    <dimen name="text_size_14">14.0dip</dimen>
+    <dimen name="text_size_13">13.0dip</dimen>
+    <dimen name="text_size_12">12.0dip</dimen>
+    <dimen name="text_size_11">11.0dip</dimen>
+    <dimen name="text_size_10">10.0dip</dimen>
+    <dimen name="space_100">100.0dip</dimen>
+    <dimen name="space_49">49dip</dimen>
+    <dimen name="space_35">35.0dip</dimen>
+    <dimen name="space_16">16.0dip</dimen>
+    <dimen name="space_15">15.0dip</dimen>
+    <dimen name="space_14">14.0dip</dimen>
+    <dimen name="space_13">13.0dip</dimen>
+    <dimen name="space_12">12.0dip</dimen>
+    <dimen name="space_10">10.0dip</dimen>
+    <dimen name="space_8">8.0dip</dimen>
+    <dimen name="space_6">6.0dip</dimen>
+    <dimen name="space_5">5.0dip</dimen>
+    <dimen name="space_4">4.0dip</dimen>
+    <dimen name="space_3">3.0dip</dimen>
+    <dimen name="space_2">2.0dip</dimen>
+
+    <dimen name="dialog_margin">7.0dip</dimen>
+    <dimen name="global_padding">8.0dip</dimen>
+    <dimen name="global_dialog_padding">15.0dip</dimen>
+    <dimen name="text_regular_primary_size">14.0dip</dimen>
+    <dimen name="text_large_secondary_size">12.0dip</dimen>
+    <dimen name="text_large_primary_size">16.0dip</dimen>
+
+    <dimen name="timeline_small_card_icon_width">12.0dip</dimen>
+    <dimen name="timeline_small_card_icon_height">12.0dip</dimen>
+    <dimen name="timeline_small_card_icon_margin_left">5.0dip</dimen>
+    <dimen name="timeline_small_card_triangle_margin_left">5.0dip</dimen>
+    <dimen name="timeline_small_card_triangle_margin_right">4.0dip</dimen>
+    <dimen name="timeline_small_card_title_margin_left">5.0dip</dimen>
+    <dimen name="timeline_small_card_title_text_size">12.0sp</dimen>
+
+    <dimen name="timeline_small_card_height">20.0dip</dimen>
+    <dimen name="timeline_small_card_min_width">66.0dip</dimen>
+    <dimen name="timeline_small_card_padding_right">5.0dip</dimen>
+
+    <!-- 意见反馈 -->
+
+    <!-- 时间选择dialog -->
+    <dimen name="done_label_size">14sp</dimen>
+    <dimen name="date_picker_component_width">270dip</dimen>
+    <dimen name="date_picker_view_animator_height">270dip</dimen>
+    <dimen name="month_list_item_header_height">50dip</dimen>
+    <dimen name="month_day_label_text_size">10sp</dimen>
+    <dimen name="day_number_select_circle_radius">16dip</dimen>
+    <dimen name="selected_date_year_size">30dip</dimen>
+    <dimen name="selected_date_day_size">75dip</dimen>
+    <dimen name="selected_date_month_size">30dip</dimen>
+    <dimen name="month_label_size">16sp</dimen>
+    <dimen name="day_number_size">16sp</dimen>
+    <dimen name="year_label_height">64dip</dimen>
+    <dimen name="year_label_text_size">22dip</dimen>
+
+    <dimen name="select_friend_header_height">60dp</dimen>
+    <dimen name="select_friend_avatar_size">40dp</dimen>
+
+    <!--toast y offset  官方默认是64dip-->
+    <dimen name="toast_y_offset">35dp</dimen>
+    <dimen name="lay_12">12dp</dimen>
+    <dimen name="lay_14">14dp</dimen>
+    <dimen name="lay_16">16dp</dimen>
+    <dimen name="lay_2">2dp</dimen>
+    <dimen name="lay_20">20dp</dimen>
+    <dimen name="lay_24">24dp</dimen>
+    <dimen name="lay_28">28dp</dimen>
+    <dimen name="lay_32">32dp</dimen>
+    <dimen name="lay_36">36dp</dimen>
+    <dimen name="lay_4">4dp</dimen>
+    <dimen name="lay_40">40dp</dimen>
+    <dimen name="lay_44">44dp</dimen>
+    <dimen name="lay_48">48dp</dimen>
+    <dimen name="lay_52">52dp</dimen>
+    <dimen name="lay_56">56dp</dimen>
+    <dimen name="lay_60">60dp</dimen>
+    <dimen name="lay_64">64dp</dimen>
+    <dimen name="lay_68">68dp</dimen>
+    <dimen name="lay_72">72dp</dimen>
+    <dimen name="lay_76">76dp</dimen>
+    <dimen name="lay_8">8dp</dimen>
+    <dimen name="lay_80">80dp</dimen>
+    <dimen name="lay_84">84dp</dimen>
+    <dimen name="lay_88">88dp</dimen>
+    <dimen name="lay_92">92dp</dimen>
+    <dimen name="lay_96">96dp</dimen>
+
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_112">112sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="font_34">34sp</dimen>
+    <dimen name="font_4">4sp</dimen>
+    <dimen name="font_45">45sp</dimen>
+    <dimen name="font_56">56sp</dimen>
+    <dimen name="font_6">6sp</dimen>
+    <dimen name="font_8">8sp</dimen>
+
+</resources>
